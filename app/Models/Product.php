@@ -11,14 +11,14 @@ class Product extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected array $fillable = [
+    protected $fillable = [
         'category_id',
         'name',
         'description',
         'exclusive'
     ];
 
-    protected array $dates = [
+    protected $dates = [
         'deleted_at'
     ];
 
