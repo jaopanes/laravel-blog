@@ -11,12 +11,12 @@ class Category extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected array $fillable = [
+    protected $fillable = [
         'name',
         'image'
     ];
 
-    protected array $dates = [
+    protected $dates = [
         'deleted_at'
     ];
 
